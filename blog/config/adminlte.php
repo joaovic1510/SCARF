@@ -13,11 +13,12 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 2',
+    'title' => 'SCARF',
 
     'title_prefix' => '',
 
     'title_postfix' => '',
+
 
     /*
     |--------------------------------------------------------------------------
@@ -30,9 +31,9 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>SCARF</b>',
 
-    'logo_mini' => '<b>A</b>LT',
+    'logo_mini' => '<b>SCF</b>',
 
     /*
     |--------------------------------------------------------------------------
@@ -45,7 +46,7 @@ return [
     |
     */
 
-    'skin' => 'blue',
+    'skin' => 'purple',
 
     /*
     |--------------------------------------------------------------------------
@@ -85,7 +86,7 @@ return [
     |
     */
 
-    'dashboard_url' => 'home',
+    'dashboard_url' => 'admin',
 
     'logout_url' => 'logout',
 
@@ -108,34 +109,34 @@ return [
     */
 
     'menu' => [
-        'MAIN NAVIGATION',
-        [
+        'ALUGUEL',
+        /*[
             'text' => 'Blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
+            'icon_color' => 'red',
+        ],*/
+        [
+            'text'        => 'Novo Aluguel',
+            'url'         => 'admin/new-rent',
+            'icon'        => 'dollar',
         ],
         [
-            'text'        => 'Pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'file',
-            'label'       => 4,
-            'label_color' => 'success',
+            'text'        => 'Histórico',
+            'url'         => 'admin/historic',
+            'icon'        => 'history',
         ],
-        'ACCOUNT SETTINGS',
+        'PRODUTOS',
         [
-            'text' => 'Profile',
-            'url'  => 'admin/settings',
-            'icon' => 'user',
+            'text' => 'Novo Produto',
+            'url'  => 'admin/new-product',
+            'icon' => 'plus-circle',
         ],
         [
-            'text' => 'Change Password',
-            'url'  => 'admin/settings',
-            'icon' => 'lock',
-        ],
-        [
-            'text'    => 'Multilevel',
-            'icon'    => 'share',
-            'submenu' => [
+            'text'    => 'Produtos',
+            'url'     => 'admin/products',
+            'icon'    => 'archive',
+            /*'submenu' => [
                 [
                     'text' => 'Level One',
                     'url'  => '#',
@@ -168,20 +169,34 @@ return [
                     'text' => 'Level One',
                     'url'  => '#',
                 ],
-            ],
+            ],*/
         ],
-        'LABELS',
+        'CLIENTES',
         [
-            'text'       => 'Important',
-            'icon_color' => 'red',
-        ],
-        [
-            'text'       => 'Warning',
-            'icon_color' => 'yellow',
+            'text' => 'Novo Cliente',
+            'url'  => 'admin/new-client',
+            'icon' => 'user-plus',
         ],
         [
-            'text'       => 'Information',
-            'icon_color' => 'aqua',
+            'text'    => 'Clientes',
+            'url'     => 'admin/clients',
+            'icon'    => 'address-book',
+        ],
+        'USUÁRIOS',
+        [
+            'text' => 'Meus Dados',
+            'url'  => 'admin/account',
+            'icon' => 'user-circle',
+        ],
+        [
+            'text' => 'Novo Usuário',
+            'url'  => 'admin/new-user',
+            'icon' => 'user',
+        ],
+        [
+            'text' => 'Usuários',
+            'url'  => 'admin/users',
+            'icon' => 'users',
         ],
     ],
 
