@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class \rent extends Model
+class rent extends Model
 {
   protected $fillable = [
       'event_date', 'local_event', 'withdrawal_day', 'return_day', 'comments', 'final_rental_price',

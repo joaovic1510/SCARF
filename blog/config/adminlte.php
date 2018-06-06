@@ -86,7 +86,7 @@ return [
     |
     */
 
-    'dashboard_url' => 'admin',
+    'dashboard_url' => 'home',
 
     'logout_url' => 'logout',
 
@@ -118,23 +118,23 @@ return [
         ],*/
         [
             'text'        => 'Novo Aluguel',
-            'url'         => 'admin/new-rent',
+            'url'         => 'new-rent',
             'icon'        => 'dollar',
         ],
         [
             'text'        => 'Histórico',
-            'url'         => 'admin/historic',
+            'url'         => 'historic',
             'icon'        => 'history',
         ],
         'PRODUTOS',
         [
             'text' => 'Novo Produto',
-            'url'  => 'admin/new-product',
+            'url'  => 'new-product',
             'icon' => 'plus-circle',
         ],
         [
             'text'    => 'Produtos',
-            'url'     => 'admin/products',
+            'url'     => 'products',
             'icon'    => 'archive',
             /*'submenu' => [
                 [
@@ -174,28 +174,28 @@ return [
         'CLIENTES',
         [
             'text' => 'Novo Cliente',
-            'url'  => 'admin/new-client',
+            'url'  => 'new-client',
             'icon' => 'user-plus',
         ],
         [
             'text'    => 'Clientes',
-            'url'     => 'admin/clients',
+            'url'     => 'clients',
             'icon'    => 'address-book',
         ],
         'USUÁRIOS',
         [
             'text' => 'Meus Dados',
-            'url'  => 'admin/account',
+            'url'  => 'account',
             'icon' => 'user-circle',
         ],
         [
             'text' => 'Novo Usuário',
-            'url'  => 'admin/new-user',
+            'url'  => 'new-user',
             'icon' => 'user',
         ],
         [
             'text' => 'Usuários',
-            'url'  => 'admin/users',
+            'url'  => 'users',
             'icon' => 'users',
         ],
     ],
