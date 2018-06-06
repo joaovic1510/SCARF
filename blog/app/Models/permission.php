@@ -4,8 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class function extends Model
+class permission extends Model
 {
-    //
+  protected $fillable = [
+      'id', 'description',
+  ];
+
     public $timestamps = false;
 }
