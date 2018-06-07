@@ -3,9 +3,9 @@
 @section('title', 'SCARF')
 
 @section('content_header')
-    <h1>Notificações</h1>
+    <h1>Produtos</h1>
 @stop
 
 @section('content')
-    <p>You are logged in!</p>
+    <p>Lista de produtos cadastrados</p>
 @stop
